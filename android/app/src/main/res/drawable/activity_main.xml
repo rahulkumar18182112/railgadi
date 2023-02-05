@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#03272B"
+    android:padding="2dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Rail Gaadi"
+        android:textAlignment="center"
+        style="@style/TextDesign"/>
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="115dp"
+            android:src="@drawable/trainlogo"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Enter Starting Point"
+                android:textAlignment="center"
+                android:textColorHint="@color/white"
+                android:background="#3446BD"/>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint=" Enter Destination Point"
+                android:textAlignment="center"
+                android:textColorHint="@color/white"
+                android:background="#3446BD"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="search"
+                android:backgroundTint="#278DF1"
+                android:id="@+id/btnSearch"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="60dp"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        app:cardUseCompatPadding="true"
+        android:padding="100dp"
+        app:cardCornerRadius="30dp"
+        android:backgroundTint="#31ABED"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Enter the Train No./Name"
+
+            android:textColorHint="@color/white"/>
+        <ImageButton
+            android:layout_marginLeft="220dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#31ABED"
+            android:src="@drawable/searchicon"
+            android:id="@+id/btnsearchicon"
+            android:scaleType="fitCenter"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginTop="580dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_marginLeft="15dp"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#03272B"
+            android:src="@drawable/home"
+            android:scaleType="fitCenter"
+            android:id="@+id/btnHome"
+            />
+
+        <ImageButton
+            android:layout_marginLeft="5dp"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#03272B"
+            android:src="@drawable/aboutusicon"
+            android:scaleType="fitCenter"
+            android:id="@+id/btnAbout"/>
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#03272B"
+            android:src="@drawable/askicon"
+            android:scaleType="fitCenter"
+            android:id="@+id/btnAsk"
+            />
+        <ImageButton
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#03272B"
+            android:src="@drawable/accounticon"
+            android:scaleType="fitCenter"
+            android:id="@+id/btnAccount"/>
+
+    </LinearLayout>
+<!--    <androidx.cardview.widget.CardView
+        android:layout_marginTop="585dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="40dp"
+        android:backgroundTint="#4F63E6">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Feedback"
+            android:backgroundTint="#4F63E6"/>
+   </androidx.cardview.widget.CardView>-->
+
+
+    <LinearLayout
+        android:layout_marginTop="350dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center">
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="5dp"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#F3A04C"
+            app:cardCornerRadius="30dp"
+            >
+<ImageView
+    android:layout_width="50dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="20dp"
+    android:src="@drawable/pnricon"
+    android:scaleType="fitCenter"/>
+            <Button
+                android:layout_marginLeft="50dp"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="Pnr Status"
+                android:backgroundTint="#F3A04C"
+                android:id="@+id/btnPnr"
+                />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="20dp"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#F3A04C"
+            app:cardCornerRadius="30dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/runstatus"
+                android:scaleType="fitCenter"/>
+
+
+            <Button
+                android:layout_marginLeft="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Running Status"
+                android:backgroundTint="#F3A04C"
+                app:cardCornerRadius="30dp"
+                android:id="@+id/btnRunStatus"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>
